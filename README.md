@@ -29,6 +29,7 @@ GRANT ALL PRIVILEGES ON test_db.* to 'root'@'%';
 (the program was unable to insert data because of some permission issues. After giving all preveleges to root, it worked. That's the reason for this command)
 
 **C. Project Run**
+
 	Run database_creator.py (you can use command like "python  database_creator.py" or if you 	are running from spyder editor, you can simply press F5)
 
 **Output**
@@ -40,4 +41,6 @@ c. run: "show tables;"
 d. for each table, run : "select count(*) from TABLE_NAME;" and you will be able to see the number of rows for each table that matches with each of the CSV files.
 
 Below are some sample screenshots of mysql that shows total number of rows inserted:
+![Image1](https://github.com/SadiHassan/SDTestProject/tree/master/img/1.png)
+![Image2](https://github.com/SadiHassan/SDTestProject/tree/master/img/2.png)
 
