@@ -32,6 +32,7 @@ GRANT ALL PRIVILEGES ON test_db.* to 'root'@'%';
 	Run database_creator.py (you can use command like "python  database_creator.py" or if you 	are running from spyder editor, you can simply press F5)
 
 **Output**
+
 It takes hours to complete all the insertion of CSV to database. Once it is done, to verify, we can go to docker CLI > mysql (as we did in step-5 of Project Setup). Then we can :
 a. run :  "show databases;" (This will show us available databases. Our created one is named "test_db" )
 b. run: "use test_db;"
