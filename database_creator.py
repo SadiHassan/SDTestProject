@@ -4,7 +4,6 @@ Created on Tue Feb 25 17:54:05 2020
 
 @author: mhassan
 """
-
 import pandas as pd
 import os
 import sqlalchemy as db
