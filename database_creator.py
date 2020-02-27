@@ -55,15 +55,7 @@ def create_table(table_name, df, engine):
         index += 1    
     create_table_str += ");"
     engine.execute(create_table_str)
-'''
-INSERT INTO MyTable
-  ( Column1, Column2, Column3 )
-VALUES
-  ('John', 123, 'Lloyds Office'), 
-  ('Jane', 124, 'Lloyds Office'), 
-  ('Billy', 125, 'London Office'),
-  ('Miranda', 126, 'Bristol Office');
-'''
+
 def insert_data_by_chunk(table_name, df, engine):
     total_rows = len(df.index)
     cur_total = 0;
@@ -105,8 +97,7 @@ def insert_data_by_chunk(table_name, df, engine):
     
     
 def insert_data(table_name, df, engine):
-    #INSERT INTO table_name
-    #VALUES (value1, value2, value3, ...);
+    
     for index, row in df.iterrows():
         value_str = ""
         for i in range(0, len(df.columns)):
@@ -123,11 +114,6 @@ def main():
     folder_name = "china-mobile-user-gemographics"
     #folder_name = "small_data"
     
-    '''
-    load_data_str = "LOAD DATA LOCAL INFILE 'china-mobile-user-gemographics/app_events.csv' INTO TABLE app_events COLUMNS TERMINATED BY ',' LINES TERMINATED BY '\\n' IGNORE 1 LINES;";
-    engine.execute(load_data_str)
-    return
-    '''
     for f in os.listdir(folder_name):
         table_name, ext = f.split(".")
         if table_name in table_list:
@@ -149,8 +135,7 @@ def main():
         print("-------------------------------------------")
         #break
         
-    #app_events = read_this_csv("china-mobile-user-gemographics/app_events.csv")
-    #print(app_events.head(5));
+    
     
 if __name__ == "__main__":
     main()
