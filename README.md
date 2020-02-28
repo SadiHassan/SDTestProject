@@ -26,6 +26,7 @@ This will download a mysql docker container (for the first run only) and will cr
 5. Go to your docker CLI and go to mysql by running this command:
 
 `mysql -P 3306 --protocol=tcp -u root -p`
+
 6. Now once you are in mysql, run this below command:
 
 `GRANT ALL PRIVILEGES ON test_db.* to 'root'@'%';`
