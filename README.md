@@ -22,7 +22,7 @@ b. `pip install  pymysql`
 3. Go to the project root folder using terminal and run the command: 
 docker-compose up
 This will download a mysql docker container (for the first run only) and will create a database for storing our data.
-4. Create a folder named "china-mobile-user-gemographics" inside root folder of project. Now we need to download our data. Go to https://www.kaggle.com/chinapage/china-mobile-user-gemographics/  and download all the csv files and keep them inside the "china-mobile-user-gemographics" folder you just created.
+4. Create a folder named **china-mobile-user-gemographics** inside root folder of project. Now we need to download our data. Go to https://www.kaggle.com/chinapage/china-mobile-user-gemographics/  and download all the csv files and keep them inside the **china-mobile-user-gemographics** folder you just created.
 5. Go to your docker CLI and go to mysql by running this command:
 mysql -P 3306 --protocol=tcp -u root -p
 6. Now once you are in mysql, run this below command:
