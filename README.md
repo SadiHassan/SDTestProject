@@ -44,3 +44,6 @@ Below are some sample screenshots of mysql that shows total number of rows inser
 ![Image1](https://github.com/SadiHassan/SDTestProject/tree/master/img/1.png)
 ![Image2](https://github.com/SadiHassan/SDTestProject/tree/master/img/2.png)
 
+**Part-2: Image storing system to insert/retrieve bulk data**
+
+Please read  **SDetect_Image_Storage_System.pdf** in the root folder of this project.
