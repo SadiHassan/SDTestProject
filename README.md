@@ -12,8 +12,9 @@ Below are the steps to run the project in your system.
 1. Instal Docker
 2. Install Python 3
 3.  Install sqlalchemy and pymysql
-a. pip install  sqlalchemy
-b. pip install  pymysql
+
+a. `pip install  sqlalchemy`
+b. `pip install  pymysql`
 
 **B. Project Setup**
 1. Clone or download the project
